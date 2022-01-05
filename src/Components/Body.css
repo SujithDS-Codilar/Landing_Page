@@ -1,0 +1,104 @@
+ main {
+    background: url(/public/images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position-x: -500px;
+    max-width: 2000px;
+  }
+  .main-content {
+    max-width: 1130px;
+    margin: auto;
+    display: flex;
+  }
+  .diff-content {
+    padding-right: 80px;
+  }
+  .diff-content h1 {
+    color: hsl(228, 39%, 23%);
+    margin-bottom: 30px;
+  }
+  .diff-content p {
+    color: hsl(227, 12%, 61%);
+    width: 70%;
+  }
+  .P1,
+  .P2,
+  .P3 {
+    display: flex;
+  }
+  .Paragraph span {
+    padding: 8px 20px;
+    background-color: hsl(12, 88%, 59%);
+    align-self: flex-start;
+    border-radius: 35px;
+    color: hsl(0, 0%, 98%);
+    margin-right: 20px;
+  }
+  .Paragraph .flex {
+    margin-bottom: 30px;
+  }
+  .Paragraph .flex h1 {
+    color: hsl(228, 39%, 23%);
+    font-size: 17.5px;
+    margin-bottom: 20px;
+  }
+  .Paragraph .flex p {
+    color: hsl(227, 12%, 61%);
+    line-height: 1.5;
+  }
+
+
+  @media(max-width:850px){
+  .main-content{
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+  .main-content .diff-content{
+    padding:0;
+  }
+  .diff-content{
+    text-align: center;
+  }
+  .diff-content h1{
+    width: 80%;
+    margin: auto;
+  }
+  .diff-content p{
+    width: 80%;
+    padding: 0;
+    margin: 30px auto;
+  }
+  .P1,
+  .P2,
+  .P3{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+  }
+  .P1 p,
+  .P2 p,
+  .P3 p{
+    margin: auto auto auto -50px;
+  }
+  .P1 h1,
+  .P2 h1,
+  .P3 h1{
+    background-color: hsl(13, 49%, 85%);
+    width: 100%;
+    padding: 5px 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .Paragraph span{
+    margin-right: 0;
+    margin-left: -15px;
+  }
+  .Paragraph .flex h1{
+    font-size: 1rem;
+  }
+  main{
+    background-position-x: 250px;
+    background-position-y: -100px;
+    background-size: 20em;
+  }
+}
